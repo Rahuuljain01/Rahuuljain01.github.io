@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rahul Jain | SEO Expert & Growth Specialist</title>
+
+<meta name="description" content="Rahul Jain is an SEO Expert helping brands grow through SEO, AI Search, technical SEO and high-converting websites.">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
+
+:root{
+--blue:#4285F4;
+--red:#EA4335;
+--yellow:#FBBC05;
+--green:#34A853;
+--dark:#202124;
+--light:#ffffff;
+--off:#f8f7f2;
+}
+
+body{
+background:#f8f7f2;
+color:#202124;
+line-height:1.6;
+}
+
+/* Header */
+header{
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,0.92);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:var(--blue);
+}
+
+nav a{
+text-decoration:none;
+color:var(--dark);
+margin-left:25px;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--blue);
+}
+
+/* Hero */
+.hero{
+padding:90px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.hero h1{
+font-size:56px;
+line-height:1.2;
+margin-bottom:20px;
+animation:fadeUp 1s ease;
+}
+
+.hero h1 span{
+color:var(--blue);
+}
+
+.hero p{
+font-size:19px;
+color:#5f6368;
+margin-bottom:30px;
+max-width:600px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 26px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+margin-right:12px;
+transition:.3s;
+}
+
+.btn-main{
+background:var(--blue);
+color:#fff;
+}
+
+.btn-main:hover{
+transform:translateY(-3px);
+background:#2f6fe6;
+}
+
+.btn-alt{
+border:2px solid var(--green);
+color:var(--green);
+}
+
+.btn-alt:hover{
+background:var(--green);
+color:#fff;
+}
+
+.hero-box{
+background:#fff;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+animation:fadeUp 1.2s ease;
+}
+
+.bar{
+height:14px;
+background:#eee;
+border-radius:20px;
+margin:15px 0;
+overflow:hidden;
+}
+
+.fill1{width:90%;height:100%;background:var(--blue);}
+.fill2{width:80%;height:100%;background:var(--red);}
+.fill3{width:95%;height:100%;background:var(--green);}
+.fill4{width:78%;height:100%;background:var(--yellow);}
+
+/* Sections */
+.section{
+padding:80px 8%;
+}
+
+.section h2{
+font-size:40px;
+text-align:center;
+margin-bottom:45px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:28px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+.card h3{
+margin-bottom:12px;
+font-size:22px;
+}
+
+.blue{color:var(--blue);}
+.red{color:var(--red);}
+.green{color:var(--green);}
+.yellow{color:#c28f00;}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stat{
+background:#fff;
+padding:30px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+}
+
+.stat h3{
+font-size:34px;
+margin-bottom:8px;
+}
+
+.links{
+text-align:center;
+}
+
+.links a{
+display:inline-block;
+padding:14px 22px;
+margin:10px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+color:#fff;
+transition:.3s;
+}
+
+.links a:hover{
+transform:translateY(-3px);
+}
+
+.l1{background:var(--blue);}
+.l2{background:var(--green);}
+.l3{background:var(--red);}
+.l4{background:var(--yellow);color:#202124;}
+
+footer{
+padding:35px;
+text-align:center;
+background:#fff;
+margin-top:50px;
+border-top:1px solid #eee;
+}
+
+/* WhatsApp Float */
+.whatsapp-float{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:#fff;
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+z-index:999;
+}
+
+/* Scroll Top */
+.top-btn{
+position:fixed;
+left:20px;
+bottom:20px;
+background:var(--blue);
+color:#fff;
+padding:12px 16px;
+border-radius:50%;
+text-decoration:none;
+font-weight:bold;
+z-index:999;
+}
+
+/* Animation */
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Mobile */
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+nav{
+display:none;
+}
+
+.section h2{
+font-size:32px;
+}
+
+}
+
+</style>
+</head>
+
+<body id="top">
+
+<header>
+<div class="logo">Rahul Jain</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div>
+<h1>I Grow Business With <span id="typing">SEO</span></h1>
+
+<p>
+I help brands rank higher on Google, AI Overviews, GEO and search results, increase traffic, generate leads and build high-converting websites.
+</p>
+
+<a href="#contact" class="btn btn-main">Hire Me</a>
+<a href="#projects" class="btn btn-alt">See Results</a>
+</div>
+
+<div class="hero-box">
+
+<h3 class="blue">SEO Performance</h3>
+
+<p>Organic Ranking Growth</p>
+<div class="bar"><div class="fill1"></div></div>
+
+<p>Website Optimisation</p>
+<div class="bar"><div class="fill2"></div></div>
+
+<p>Traffic Increase</p>
+<div class="bar"><div class="fill3"></div></div>
+
+<p>Lead Conversion</p>
+<div class="bar"><div class="fill4"></div></div>
+
+</div>
+
+</section>
+
+<section class="section" id="about">
+
+<h2>About Me</h2>
+
+<p style="max-width:850px;margin:auto;text-align:center;color:#5f6368;font-size:18px;">
+I help businesses grow using SEO, AEO, GEO and AI-focused strategies, technical audits, content optimisation, backlinks and high-converting landing pages.
+My focus is real traffic, real leads and long-term growth.
+</p>
+
+</section>
+
+<section class="section" id="services">
+
+<h2>My Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3 class="blue">SEO Strategy</h3>
+<p>Keyword research, on-page SEO, off-page SEO and ranking improvements.</p>
+</div>
+
+<div class="card">
+<h3 class="red">Technical SEO</h3>
+<p>Website speed, indexing, schema setup and crawl issue fixes.</p>
+</div>
+
+<div class="card">
+<h3 class="green">Content Growth</h3>
+<p>Blogs, service pages and SEO-optimised content writing.</p>
+</div>
+
+<div class="card">
+<h3 class="yellow">Landing Pages</h3>
+<p>Modern pages designed to convert traffic into leads.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="projects">
+
+<h2>Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3 class="blue">Cheap Medicine Shop</h3>
+<p>SEO blogs, global rankings, DR improvement and traffic growth.</p>
+</div>
+
+<div class="card">
+<h3 class="green">Hollowood Chemists</h3>
+<p>SEO blogs, local rankings and traffic growth.</p>
+</div>
+
+<div class="card">
+<h3 class="red">Recharge Trendd</h3>
+<p>Website SEO and technical improvements.</p>
+</div>
+
+<div class="card">
+<h3 class="blue">Avana</h3>
+<p>NZ-based client with on-page SEO, off-page SEO, content updates and website health improvements.</p>
+</div>
+
+<div class="card">
+<h3 class="red">Asttrolok</h3>
+<p>Blog posts, astrology lead generation, tech audits, UI/UX and content strategy.</p>
+</div>
+
+<div class="card">
+<h3 class="yellow">Dhaksha Drones</h3>
+<p>Reduced spam score, improved DR, blog posting and on-page SEO.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Results</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3 class="blue">350%</h3>
+<p>Traffic Growth</p>
+</div>
+
+<div class="stat">
+<h3 class="green">50+ Monthly</h3>
+<p>Blogs Published</p>
+</div>
+
+<div class="stat">
+<h3 class="red">100+</h3>
+<p>Backlinks Built</p>
+</div>
+
+<div class="stat">
+<h3 class="blue">70,000+</h3>
+<p>Bad Backlinks Removed</p>
+</div>
+
+<div class="stat">
+<h3 class="yellow">12+</h3>
+<p>Projects Completed</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Client Feedback</h2>
+
+<div class="cards">
+
+<div class="card">
+<p>"Rahul improved our rankings and traffic quickly."</p>
+<h3 class="blue">Business Owner</h3>
+</div>
+
+<div class="card">
+<p>"Professional SEO work and excellent communication."</p>
+<h3 class="green">E-commerce Client</h3>
+</div>
+
+<div class="card">
+<p>"Great backlinks and content strategy."</p>
+<h3 class="red">Agency Client</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="section links">
+
+<h2>Quick Links</h2>
+
+<a href="#" class="l1">Resume</a>
+<a href="https://wa.me/918602818601" class="l2">WhatsApp</a>
+<a href="#" class="l3">LinkedIn</a>
+<a href="#" class="l4">Portfolio</a>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2>Contact Me</h2>
+
+<p style="text-align:center;font-size:18px;">Email: studyonly.rj94@gmail.com</p>
+<p style="text-align:center;font-size:18px;">WhatsApp: +91 8602818601</p>
+
+</section>
+
+<footer>
+© 2026 Rahul Jain | SEO Portfolio Website
+</footer>
+
+<a href="https://wa.me/918602818601" class="whatsapp-float">WhatsApp</a>
+<a href="#top" class="top-btn">↑</a>
+
+<script>
+const words = ["SEO", "Google Rankings", "AI Search", "Traffic", "Leads"];
+let i = 0;
+
+setInterval(() => {
+document.getElementById("typing").innerText = words[i];
+i = (i + 1) % words.length;
+}, 1800);
+</script>
+
+</body>
+</html>
